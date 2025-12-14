@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Details Form</title>
+</head>
+
+<body>
+
+<form action="/" method="post">
+  <h2>User Registration Form</h2>
+  <hr>
+
+  <!-- Basic Details -->
+  <fieldset>
+    <legend>Basic Details</legend>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="full_name" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Contact Number:</label><br>
+    <input type="tel" name="contact" placeholder="9876543210" required><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob" required>
+  </fieldset>
+
+  <br>
+
+  <!-- Address -->
+  <fieldset>
+    <legend>Address Information</legend>
+
+    <label>Residential Address:</label><br>
+    <textarea name="address" rows="3" required></textarea>
+  </fieldset>
+
+  <br>
+
+  <!-- Education & Gender -->
+  <fieldset>
+    <legend>Education & Gender</legend>
+
+    <label>Highest Qualification:</label><br>
+    <select name="education" required>
+      <option value="">-- Select --</option>
+      <option>High School</option>
+      <option>Bachelor's Degree</option>
+      <option>Master's Degree</option>
+      <option>Doctorate</option>
+    </select>
+
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+  </fieldset>
+
+  <br>
+
+  <!-- Additional Info -->
+  <fieldset>
+    <legend>Additional Notes</legend>
+
+    <label>Comments:</label><br>
+    <textarea name="comments" rows="4"></textarea>
+  </fieldset>
+
+  <br>
+
+  <!-- Submit -->
+  <fieldset>
+    <legend>Confirmation</legend>
+
+    <input type="checkbox" required> I confirm the details are correct
+    <br><br>
+
+    <button type="submit">Register</button>
+  </fieldset>
+
+</form>
+
+</body>
+</html>
